@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/naasse/react-playpen.svg?branch=master)](https://travis-ci.com/naasse/react-playpen)
+[![Coverage Status](https://coveralls.io/repos/github/naasse/react-playpen/badge.svg?branch=master)](https://coveralls.io/github/naasse/react-playpen?branch=master)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-playpen/static/css/main.5f361e03.chunk.css",
-    "main.js": "/react-playpen/static/js/main.7f9fb3f0.chunk.js",
-    "main.js.map": "/react-playpen/static/js/main.7f9fb3f0.chunk.js.map",
+    "main.js": "/react-playpen/static/js/main.b0b3ce25.chunk.js",
+    "main.js.map": "/react-playpen/static/js/main.b0b3ce25.chunk.js.map",
     "runtime-main.js": "/react-playpen/static/js/runtime-main.e2628013.js",
     "runtime-main.js.map": "/react-playpen/static/js/runtime-main.e2628013.js.map",
     "static/js/2.c75d7c0b.chunk.js": "/react-playpen/static/js/2.c75d7c0b.chunk.js",
     "static/js/2.c75d7c0b.chunk.js.map": "/react-playpen/static/js/2.c75d7c0b.chunk.js.map",
     "index.html": "/react-playpen/index.html",
-    "precache-manifest.9c3ded1a0c1342eff3acb46dfd64bf75.js": "/react-playpen/precache-manifest.9c3ded1a0c1342eff3acb46dfd64bf75.js",
+    "precache-manifest.5ecb3b912974176ef3366d0939d06c69.js": "/react-playpen/precache-manifest.5ecb3b912974176ef3366d0939d06c69.js",
     "service-worker.js": "/react-playpen/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/react-playpen/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.c75d7c0b.chunk.js.LICENSE.txt": "/react-playpen/static/js/2.c75d7c0b.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e2628013.js",
     "static/js/2.c75d7c0b.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.7f9fb3f0.chunk.js"
+    "static/js/main.b0b3ce25.chunk.js"
   ]
 }

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-playpen/static/css/main.422ce648.chunk.css",
-    "main.js": "/react-playpen/static/js/main.d4bc2f1b.chunk.js",
-    "main.js.map": "/react-playpen/static/js/main.d4bc2f1b.chunk.js.map",
+    "main.css": "/react-playpen/static/css/main.9c6e89b5.chunk.css",
+    "main.js": "/react-playpen/static/js/main.deaa109b.chunk.js",
+    "main.js.map": "/react-playpen/static/js/main.deaa109b.chunk.js.map",
     "runtime-main.js": "/react-playpen/static/js/runtime-main.e2628013.js",
     "runtime-main.js.map": "/react-playpen/static/js/runtime-main.e2628013.js.map",
     "static/js/2.3283401b.chunk.js": "/react-playpen/static/js/2.3283401b.chunk.js",
     "static/js/2.3283401b.chunk.js.map": "/react-playpen/static/js/2.3283401b.chunk.js.map",
     "index.html": "/react-playpen/index.html",
-    "precache-manifest.3bf5694cdcf04c1f6f73dce027713c9b.js": "/react-playpen/precache-manifest.3bf5694cdcf04c1f6f73dce027713c9b.js",
+    "precache-manifest.4c35e6d798cc3f260fbd00cf7d87a188.js": "/react-playpen/precache-manifest.4c35e6d798cc3f260fbd00cf7d87a188.js",
     "service-worker.js": "/react-playpen/service-worker.js",
-    "static/css/main.422ce648.chunk.css.map": "/react-playpen/static/css/main.422ce648.chunk.css.map",
+    "static/css/main.9c6e89b5.chunk.css.map": "/react-playpen/static/css/main.9c6e89b5.chunk.css.map",
     "static/js/2.3283401b.chunk.js.LICENSE.txt": "/react-playpen/static/js/2.3283401b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e2628013.js",
     "static/js/2.3283401b.chunk.js",
-    "static/css/main.422ce648.chunk.css",
-    "static/js/main.d4bc2f1b.chunk.js"
+    "static/css/main.9c6e89b5.chunk.css",
+    "static/js/main.deaa109b.chunk.js"
   ]
 }

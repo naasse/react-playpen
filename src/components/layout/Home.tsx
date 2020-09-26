@@ -14,4 +14,3 @@ export default class Home extends React.Component<Props, State> {
     );
   }
 }
-

@@ -1,0 +1,35 @@
+.Banner {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 4rem;
+    display: grid;
+    grid-template-areas: "logo nav";
+    background-color: #282c34;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Banner .logo {
+    grid-area: "logo";
+    height: 4rem;
+}
+
+.Banner .nav {
+    display: grid;
+    grid-area: "nav";
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.Banner .nav a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.Banner .nav a:hover {
+    transform: scale(1.1);
+}

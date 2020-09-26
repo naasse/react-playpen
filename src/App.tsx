@@ -1,5 +1,6 @@
 import React, {ReactElement} from 'react';
 import './App.css';
+import './util/padding-util.css'
 import Home from './components/layout/Home'
 import Banner from './components/navigation/Banner'
 
@@ -11,7 +12,7 @@ export default class App extends React.Component<Props, State> {
     return (
       <div className="App">
         <header className="app-header">
-          <Banner />
+          <Banner title={process.env.REACT_APP_TITLE as string}/>
         </header>
         <body className="app-body">
           <Home/>
@@ -20,4 +21,3 @@ export default class App extends React.Component<Props, State> {
     );
   }
 }
-

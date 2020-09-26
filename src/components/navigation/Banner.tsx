@@ -1,7 +1,9 @@
-import React, {ReactElement} from 'react';
+import React, { ReactElement } from 'react';
 import './Banner.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-type Props = {};
+type Props = { title: string };
 type State = {};
 
 export default class Banner extends React.Component<Props, State> {
@@ -10,13 +12,16 @@ export default class Banner extends React.Component<Props, State> {
     return (
       <div className="Banner">
         <img src={require("../../assets/logo.png")} className="logo" alt="Logo" />
+        <span className="title">{this.props.title}</span>
         <nav className="nav">
-          <a href="/">Link 1</a>
-          <a href="/">Link 2</a>
-          <a href="/">Link 3</a>
+          <a href="https://github.com/naasse" target="_blank" rel="noreferrer noopener">
+            <FontAwesomeIcon icon={faGithub} className="anchor-icon" />
+            Github
+          </a>
+          <a href="/">???</a>
+          <a href="/">???</a>
         </nav>
       </div>
     );
   }
 }
-

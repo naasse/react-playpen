@@ -83,8 +83,7 @@
     "deploy": "gh-pages -d build",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "coverage": "npm test -- --coverage --watchAll=false --collectCoverageFrom=src/**/*.tsx",
-    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "test:coverage": "npm test -- --coverage --watchAll=false --collectCoverageFrom=src/**/*.tsx",
     "lint": "eslint . --ext .tsx"
   },
   "eslintConfig": {
@@ -105,7 +104,6 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
-    "coveralls": "^3.1.0",
     "eslint": "^7.10.0",
     "gh-pages": "^3.1.0"
   },

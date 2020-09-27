@@ -17,6 +17,5 @@ install:
 
 script:
   - npm run lint
-  - npm test
-  - npm run coveralls
+  - npm run test:coverage
   - sonar-scanner

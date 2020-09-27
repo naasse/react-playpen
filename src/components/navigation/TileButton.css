@@ -1,15 +1,15 @@
 .TileButton {
   display: grid;
   border: 1px solid #ffffff;
-  width: 10rem;
-  height: 10rem;
+  width: 13rem;
+  height: 13rem;
   padding: 20px;
   background: rgb(9, 123, 151);
   box-shadow: 0 .25rem .3rem rgba(0, 0, 0, 0.16), 0 .25rem .3rem rgba(0, 0, 0, 0.23);
   border-radius: 1.5rem;
   transition: all 0.4s;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #ffffff;
 }
 

@@ -1,0 +1,10 @@
+.Home {
+  color: #ffffff;
+}
+
+.tile-containers {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1.5rem;
+  justify-content: center;
+}

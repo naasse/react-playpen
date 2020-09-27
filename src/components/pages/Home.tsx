@@ -12,7 +12,7 @@ export default class Home extends React.Component<Props, State> {
     return (
       <div className="Home">
         <h1>
-          Hello, world!
+          Hello world!
         </h1>
         <section>
           <div className="tile-containers">

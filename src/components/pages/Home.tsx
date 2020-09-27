@@ -3,8 +3,8 @@ import './Home.css';
 import TileButton from '../navigation/TileButton';
 import { faGamepad, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 
-type Props = {};
-type State = {};
+type Props = Record<string, unknown>;
+type State = Record<string, unknown>;
 
 export default class Home extends React.Component<Props, State> {
 

@@ -10,8 +10,8 @@ import { HashLink } from 'react-router-hash-link';
 
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-type Props = {};
-type State = {};
+type Props = Record<string, unknown>;
+type State = Record<string, unknown>;
 
 export default class App extends React.Component<Props, State> {
   render(): ReactElement {

@@ -5,7 +5,7 @@ import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import { isNil } from 'lodash';
 
 type Props = { text: string, icon?: IconDefinition };
-type State = {};
+type State = Record<string, unknown>;
 
 export default class TileButton extends React.Component<Props, State> {
 

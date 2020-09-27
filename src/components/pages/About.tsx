@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import './About.css';
 
-type Props = {};
-type State = {};
+type Props = Record<string, unknown>;
+type State = Record<string, unknown>;
 
 export default class About extends React.Component<Props, State> {
 

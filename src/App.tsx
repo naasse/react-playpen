@@ -24,7 +24,7 @@ export default class App extends React.Component<Props, State> {
             <Banner title={process.env.REACT_APP_TITLE as string} />
           </header>
           <main id="main" className="app-body" role="main">
-            <Route render={({ location }) => (
+            <Route render={({ location }): ReactElement => (
               <TransitionGroup>
                 <CSSTransition
                   key={location.pathname}
@@ -33,7 +33,7 @@ export default class App extends React.Component<Props, State> {
                   <Switch location={location}>
                     <Route name="home" exact path="/home" component={Home} />
                     <Route name="about" path="/about" component={About} />
-                    <Route render={() => <Redirect to="/home" />} />
+                    <Route render={(): ReactElement => <Redirect to="/home" />} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>

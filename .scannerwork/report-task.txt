@@ -1,7 +1,0 @@
-organization=naasse
-projectKey=naasse.react.playpen
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.12604
-dashboardUrl=https://sonarcloud.io/dashboard?id=naasse.react.playpen
-ceTaskId=AXTRD8f-pHpXAwEco-Rz
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXTRD8f-pHpXAwEco-Rz

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-playpen/static/css/main.7bd68f9a.chunk.css",
+    "main.js": "/react-playpen/static/js/main.c8c621c6.chunk.js",
+    "main.js.map": "/react-playpen/static/js/main.c8c621c6.chunk.js.map",
+    "runtime-main.js": "/react-playpen/static/js/runtime-main.e2628013.js",
+    "runtime-main.js.map": "/react-playpen/static/js/runtime-main.e2628013.js.map",
+    "static/js/2.a27e0399.chunk.js": "/react-playpen/static/js/2.a27e0399.chunk.js",
+    "static/js/2.a27e0399.chunk.js.map": "/react-playpen/static/js/2.a27e0399.chunk.js.map",
+    "index.html": "/react-playpen/index.html",
+    "precache-manifest.62dc8f728e5549d87f6a34c0eef2f7fa.js": "/react-playpen/precache-manifest.62dc8f728e5549d87f6a34c0eef2f7fa.js",
+    "service-worker.js": "/react-playpen/service-worker.js",
+    "static/css/main.7bd68f9a.chunk.css.map": "/react-playpen/static/css/main.7bd68f9a.chunk.css.map",
+    "static/js/2.a27e0399.chunk.js.LICENSE.txt": "/react-playpen/static/js/2.a27e0399.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2628013.js",
+    "static/js/2.a27e0399.chunk.js",
+    "static/css/main.7bd68f9a.chunk.css",
+    "static/js/main.c8c621c6.chunk.js"
+  ]
+}

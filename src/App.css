@@ -16,13 +16,8 @@
   left: 0;
 }
 
-.fade-enter, .fade-exit {
-  /* TODO - better way to do this? It moves the page content.
-  Without it, the new page loads from the bottom. */
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  transition: 0.8s ease opacity;
+.fade-enter {
+  transition: 0.8s ease-in opacity;
 }
 
 .fade-enter, .fade-exit-active {

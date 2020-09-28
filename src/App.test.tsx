@@ -1,8 +1,47 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import App from "./App";
+import { mount, ReactWrapper } from "enzyme"
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  // TODO
+let component: ReactWrapper;
+
+describe("App", () => {
+
+  const OLD_ENV = process.env;
+
+  beforeEach(() => {
+    jest.resetModules();
+    process.env = { ...OLD_ENV };
+  });
+
+  afterEach((): void => {
+    component.unmount();
+  });
+
+  afterAll(() => {
+    process.env = OLD_ENV;
+  });
+
+  it("renders banner", () => {
+    const testTitle = "Test Title";
+    process.env.REACT_APP_TITLE = testTitle;
+    process.env.REACT_APP_CONTEXT = "react-playpen-test";
+    component = mount(
+      <App />
+    );
+    expect(component.find(".Banner").exists()).toBeTruthy();
+    expect(component.find(".Banner .title").text()).toBe(testTitle);
+    expect(component.find(".Banner .title").text()).toBe(testTitle);
+    expect(component.find(".Banner .nav a").length).toBe(3);
+    expect(component.find(".Banner .nav a").at(0).text()).toBe("Home");
+    expect(component.find(".Banner .nav a").at(1).text()).toBe("About");
+    expect(component.find(".Banner .nav a").at(2).text()).toBe("Github");
+  });
+
+  it("renders home page", () => {
+    component = mount(
+      <App />
+    );
+    expect(component.find(".Home").exists()).toBeTruthy();
+    expect(component.find(".About").exists()).toBeFalsy();
+  });
 });

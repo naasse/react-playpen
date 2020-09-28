@@ -37,11 +37,12 @@ describe("App", () => {
     expect(component.find(".Banner .nav a").at(2).text()).toBe("Github");
   });
 
-  it("renders home page", () => {
+  it("renders home page by default", () => {
     component = mount(
       <App />
     );
     expect(component.find(".Home").exists()).toBeTruthy();
     expect(component.find(".About").exists()).toBeFalsy();
+    // TODO - click the About link
   });
 });

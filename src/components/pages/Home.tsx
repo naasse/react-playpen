@@ -17,7 +17,7 @@ export default class Home extends React.Component<Props, State> {
         <section>
           <div className="tile-containers">
             <TileButton text="Checkers" icon={faGamepad} />
-            <TileButton text="???" icon={faQuestionCircle}/>
+            <TileButton text="???" icon={faQuestionCircle} />
             <TileButton text="???" icon={faQuestionCircle} />
           </div>
         </section>

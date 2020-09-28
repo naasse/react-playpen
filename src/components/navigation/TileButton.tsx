@@ -17,7 +17,7 @@ export default class TileButton extends React.Component<Props, State> {
         </span>
         {!isNil(this.props.icon) &&
           <div>
-          <FontAwesomeIcon icon={this.props.icon as IconDefinition} className="tile-icon fa-2x" />
+          <FontAwesomeIcon icon={this.props.icon} className="tile-icon fa-2x" />
           </div>
         }
       </button>

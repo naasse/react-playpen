@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a93edc9a5cb4ae9b9842fd3f9d9d50dc",
+    "revision": "e09adf8ddeafe23a0047c94bffe962f6",
     "url": "/react-playpen/index.html"
   },
   {
-    "revision": "ad2f9b0607cb67184e4f",
-    "url": "/react-playpen/static/css/main.7bd68f9a.chunk.css"
+    "revision": "d8489fe853f996518d1e",
+    "url": "/react-playpen/static/css/main.48b619c3.chunk.css"
   },
   {
     "revision": "192b6394eedc9c6febff",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-playpen/static/js/2.a27e0399.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ad2f9b0607cb67184e4f",
+    "revision": "d8489fe853f996518d1e",
     "url": "/react-playpen/static/js/main.c8c621c6.chunk.js"
   },
   {

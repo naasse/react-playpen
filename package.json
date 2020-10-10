@@ -79,7 +79,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "node scripts/build.js",
-    "test": "jest",
+    "test": "jest --runInBand",
     "test:coverage": "npm test -- --coverage --watchAll=false --collectCoverageFrom=src/**/*.tsx",
     "lint": "eslint . --ext .tsx"
   },

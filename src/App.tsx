@@ -7,7 +7,6 @@ import About from './components/pages/About';
 import Banner from './components/navigation/Banner';
 import { HashLink } from 'react-router-hash-link';
 
-
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 type Props = Record<string, unknown>;
@@ -19,7 +18,7 @@ export default class App extends React.Component<Props, State> {
       <div className="App">
         <HashRouter>
           {/* TODO - this no longer works with HashRouter. Fix for accessibility. */}
-          <HashLink className="skip-link" to="/home#main">Skip to main</HashLink>
+          <HashLink className="skip-link" to="/home#main">Skip to content</HashLink>
           <header className="app-header">
             <Banner title={process.env.REACT_APP_TITLE as string} />
           </header>

@@ -14,7 +14,6 @@
   display: grid;
   grid-area: "logo";
   height: 4rem;
-  margin-left:
 }
 
 .Banner .title {
@@ -33,6 +32,10 @@
   justify-items: center;
 }
 
+.overflow-nav {
+  display: none !important;
+}
+
 .Banner .title, .Banner .nav a {
   color: #ffffff;
   font-weight: 500;
@@ -46,4 +49,37 @@
 
 .Banner .nav a:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 680px) {
+  .Banner {
+    height: 3rem !important;
+  }
+
+  .Banner .title {
+    font-size: 1.5rem !important;
+    height: 3rem !important;
+  }
+
+  .Banner .logo {
+    height: 3rem !important;
+  }
+
+  .Banner .nav {
+    justify-content: right;
+    padding-right: 1rem;
+    grid-template-columns: repeat(1, auto) !important;
+  }
+
+  .Banner .nav a:hover {
+    cursor: pointer;
+  }
+
+  .full-nav {
+    display: none !important;
+  }
+
+  .overflow-nav {
+    display: grid !important;
+  }
 }

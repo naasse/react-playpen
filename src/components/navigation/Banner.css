@@ -1,4 +1,4 @@
-.Banner {
+.bannerNav {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -8,15 +8,16 @@
   grid-template-columns: 5rem auto auto;
   background-color: #282c34;
   box-shadow: 0 .25rem .5rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
-.Banner .logo {
+.bannerNav .logo {
   display: grid;
   grid-area: "logo";
   height: 4rem;
 }
 
-.Banner .title {
+.bannerNav .title {
   display: grid;
   grid-area: "title";
   height: 4rem;
@@ -24,7 +25,7 @@
   font-size: 2rem;
 }
 
-.Banner .nav {
+.bannerNav .nav {
   display: grid;
   grid-area: "nav";
   grid-template-columns: repeat(3, auto);
@@ -36,19 +37,30 @@
   display: none !important;
 }
 
-.Banner .title, .Banner .nav a {
+.bannerNav .title, .bannerNav .nav a,
+.overflow-menu ul li a {
   color: #ffffff;
   font-weight: 500;
 }
 
-.Banner .nav a {
+.bannerNav .nav a,
+.overflow-menu ul li a {
   font-size: 1.25rem;
   transition: 0.5s;
   text-decoration: none;
 }
 
-.Banner .nav a:hover {
+.bannerNav .nav a:hover,
+.overflow-menu ul li a {
   transform: scale(1.1);
+}
+
+.overflow-menu.overflow-closed {
+  top: -8rem;
+}
+
+.overflow-menu.overflow-closed ul li a {
+  display: none;
 }
 
 .overflow-menu {
@@ -57,6 +69,8 @@
   top: 3rem;
   width: 10rem;
   background-color: rgb(0, 128, 128);
+  transition: 1s;
+  z-index: 1;
 }
 
 .overflow-menu ul {
@@ -67,27 +81,33 @@
   padding: .25rem 0;
 }
 
+@media screen and (min-width: 680px) {
+  .overflow-menu {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 680px) {
-  .Banner {
+  .bannerNav {
     height: 3rem !important;
   }
 
-  .Banner .title {
+  .bannerNav .title {
     font-size: 1.5rem !important;
     height: 3rem !important;
   }
 
-  .Banner .logo {
+  .bannerNav .logo {
     height: 3rem !important;
   }
 
-  .Banner .nav {
+  .bannerNav .nav {
     justify-content: right;
     padding-right: 1rem;
     grid-template-columns: repeat(1, auto) !important;
   }
 
-  .Banner .nav a:hover {
+  .bannerNav .nav a:hover {
     cursor: pointer;
   }
 

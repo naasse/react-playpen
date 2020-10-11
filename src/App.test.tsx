@@ -31,13 +31,10 @@ describe("App", () => {
     expect(component.find(".Banner").exists()).toBeTruthy();
     expect(component.find(".Banner .title").text()).toBe(testTitle);
     expect(component.find(".Banner .title").text()).toBe(testTitle);
-    expect(component.find(".Banner .nav a").length).toBe(4);
+    expect(component.find(".Banner .nav a").length).toBe(3);
     expect(component.find(".Banner .nav a").at(0).text()).toBe("Home");
     expect(component.find(".Banner .nav a").at(1).text()).toBe("About");
     expect(component.find(".Banner .nav a").at(2).text()).toBe("Github");
-    // Overflow nav ("hamburger") follows
-    expect(component.find(".Banner .nav a").at(3).text()).toBe("");
-    expect(component.find(".Banner .nav a").at(3).type()).toBe("a");
   });
 
   it("renders home page by default", () => {

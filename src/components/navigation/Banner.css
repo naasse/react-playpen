@@ -51,6 +51,22 @@
   transform: scale(1.1);
 }
 
+.overflow-menu {
+  position: absolute;
+  right: 0;
+  top: 3rem;
+  width: 10rem;
+  background-color: rgb(0, 128, 128);
+}
+
+.overflow-menu ul {
+  list-style-type: none;
+}
+
+.overflow-menu ul li {
+  padding: .25rem 0;
+}
+
 @media screen and (max-width: 680px) {
   .Banner {
     height: 3rem !important;

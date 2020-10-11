@@ -1,0 +1,10 @@
+.anchor-icon {
+  padding-right: .25rem;
+}
+
+.button-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}

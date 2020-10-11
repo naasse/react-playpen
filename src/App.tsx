@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react';
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
-import './util/padding-util.css'
+import './util/icons.css';
+import './util/padding-util.css';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Banner from './components/navigation/Banner';
@@ -13,6 +14,7 @@ type Props = Record<string, unknown>;
 type State = Record<string, unknown>;
 
 export default class App extends React.Component<Props, State> {
+
   render(): ReactElement {
     return (
       <div className="App">

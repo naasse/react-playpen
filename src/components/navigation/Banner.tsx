@@ -6,10 +6,26 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
 type Props = { title: string };
-type State = Record<string, unknown>;
+type State = { showOverflowMenu: boolean };
 
 export default class Banner extends React.Component<Props, State> {
 
+  constructor (props: Props) {
+    super(props);
+    this.state = {
+      showOverflowMenu: false
+    };
+    this.toggleOverflow = this.toggleOverflow.bind(this);
+  }
+
+  toggleOverflow (): void {
+    this.setState({
+      showOverflowMenu: !this.state.showOverflowMenu
+    });
+  }
+
+  // TODO - combine the list of links into an array and iterate through when rendering.
+  // Prevents repeating ourselves.
   render(): ReactElement {
     return (
       <div className="Banner">
@@ -24,9 +40,27 @@ export default class Banner extends React.Component<Props, State> {
           </a>
         </nav>
         <nav className="overflow-nav nav">
-          <a>
-            <FontAwesomeIcon icon={faBars} className="anchor-icon" />
-          </a>
+          <button className="button-icon" onClick={this.toggleOverflow}>
+            <FontAwesomeIcon icon={faBars} />
+          </button>
+          {this.state.showOverflowMenu &&
+            <div className="overflow-menu">
+              <ul>
+                <li>
+                  <Link to="/home">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <a href="https://github.com/naasse" target="_blank" rel="noreferrer noopener">
+                    <FontAwesomeIcon icon={faGithub} className="anchor-icon" />
+                      Github
+                  </a>
+                </li>
+              </ul>
+            </div>
+          }
         </nav>
       </div>
     );
